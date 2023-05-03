@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="styles">
+        <div id="header">
+            <button id="tempMeasureChange">Switch to F°</button>
+            <input type="text" placeholder="Search a city" id="input">
+            <select id="selectLanguage">
+                <option value="'first" selected>Choose a language</option>
+                <option value="en">English</option>
+                <option value="he">Hebrew</option>
+            </select>
+        </div>
+        <div id="main">
+            <div class="main-item" id="city"></div>
+            <div class="main-item" id="date"></div>
+            <div class="main-item" id="temperature"></div>
+            <div class="main-item" id="weather-condition"></div>
+            <div class="main-item" id="fluctuation-temperature"></div>
+        </div>
+    </div>
+</body>
+<script src="logic.js"></script>
+
+</html>
