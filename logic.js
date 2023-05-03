@@ -44,22 +44,53 @@ async function update() {
         const currentCondition = report.weather[0].description;
         condition.innerText = currentCondition.charAt(0).toUpperCase() + currentCondition.slice(1);
         switch (report.weather[0].icon) {
-            case ("01d", "01n"): {
+            case ("01d"): {
                 document.body.style.backgroundImage = 'url("https://media.istockphoto.com/id/162428248/photo/cloudscape.jpg?s=612x612&w=0&k=20&c=9yNkLzvPtJouuJw7XRuvKQ0rD9Dh_UksrKKlvtEpKMg=")'
+            }break;
+            case("01n"): {
+                document.body.style.backgroundImage = 'url("https://media.istockphoto.com/id/162428248/photo/cloudscape.jpg?s=612x612&w=0&k=20&c=9yNkLzvPtJouuJw7XRuvKQ0rD9Dh_UksrKKlvtEpKMg=")'
+            }break;
+            case ("02d"): {
+                document.body.style.backgroundImage = 'url("https://media.istockphoto.com/id/512218646/photo/storm-sky-rain.jpg?s=612x612&w=0&k=20&c=RoUDM9BMwqW8NkPXjzAzlDKCHPOmdZhmmeT3jGA2EaM=")'
             } break;
-            case ("02d", "02n", "03d", "03n", "04d", "04n"): {
+            case ("02n"): {
+                document.body.style.backgroundImage = 'url("https://media.istockphoto.com/id/512218646/photo/storm-sky-rain.jpg?s=612x612&w=0&k=20&c=RoUDM9BMwqW8NkPXjzAzlDKCHPOmdZhmmeT3jGA2EaM=")'
+            } break;
+            case ("03d"): {
+                document.body.style.backgroundImage = 'url("https://media.istockphoto.com/id/512218646/photo/storm-sky-rain.jpg?s=612x612&w=0&k=20&c=RoUDM9BMwqW8NkPXjzAzlDKCHPOmdZhmmeT3jGA2EaM=")'
+            } break;
+            case ("03n"): {
+                document.body.style.backgroundImage = 'url("https://media.istockphoto.com/id/512218646/photo/storm-sky-rain.jpg?s=612x612&w=0&k=20&c=RoUDM9BMwqW8NkPXjzAzlDKCHPOmdZhmmeT3jGA2EaM=")'
+            } break;
+            case ("04d"): {
+                document.body.style.backgroundImage = 'url("https://media.istockphoto.com/id/512218646/photo/storm-sky-rain.jpg?s=612x612&w=0&k=20&c=RoUDM9BMwqW8NkPXjzAzlDKCHPOmdZhmmeT3jGA2EaM=")'
+            } break;
+            case ("04n"): {
                 document.body.style.backgroundImage = 'url("https://media.istockphoto.com/id/512218646/photo/storm-sky-rain.jpg?s=612x612&w=0&k=20&c=RoUDM9BMwqW8NkPXjzAzlDKCHPOmdZhmmeT3jGA2EaM=")'
             } break;
             case ("11d"): {
                 document.body.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpjSAwW2zl1JLQ61z5krxfB6x_0vwwxel7A&usqp=CAU")'
+            } break; 
+            case ("09d"): {
+                document.body.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBWbY1V5VFZ8RdqJAKK3L3aoMJWwfqlVV2Q&usqp=CAU")'
             } break;
-            case ("09d", "10d"): {
+            case ("09n"): {
+                document.body.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBWbY1V5VFZ8RdqJAKK3L3aoMJWwfqlVV2Q&usqp=CAU")'
+            } break;
+            case ("10d"): {
+                document.body.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBWbY1V5VFZ8RdqJAKK3L3aoMJWwfqlVV2Q&usqp=CAU")'
+            } break;
+            case ("10n"): {
                 document.body.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBWbY1V5VFZ8RdqJAKK3L3aoMJWwfqlVV2Q&usqp=CAU")'
             } break;
             case ("13d"): {
                 document.body.style.backgroundImage = 'url("https://ichef.bbci.co.uk/news/976/cpsprodpb/125B0/production/_128748157_gettyimages-1247431984.jpg")'
-            }
+            }break;
+            case ("13n"): {
+                document.body.style.backgroundImage = 'url("https://ichef.bbci.co.uk/news/976/cpsprodpb/125B0/production/_128748157_gettyimages-1247431984.jpg")'
+            }break; 
         }
+        // console.log(report)
     }
     catch (error) {
         cityName.innerText = "The city you entered does not exist, make sure you spelled it correctly";
