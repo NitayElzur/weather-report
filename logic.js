@@ -90,7 +90,7 @@ async function update() {
                 document.body.style.backgroundImage = 'url("https://ichef.bbci.co.uk/news/976/cpsprodpb/125B0/production/_128748157_gettyimages-1247431984.jpg")'
             }break; 
         }
-        // console.log(report)
+        // console.log(report) 
     }
     catch (error) {
         cityName.innerText = "The city you entered does not exist, make sure you spelled it correctly";
